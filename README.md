@@ -24,6 +24,7 @@ it now triggers "Invalid Host Header" error)
 ```bash
 $ node server          # runs the server to serve API calls to "/server"
 $ npm run start        # runs the client with the proxy "http://xx.xx.xx.xx:3000/server" => "http://localhost:3009 
+```
 
 ## Running unit tests
 
