@@ -110,6 +110,17 @@ describe('Blog Roll Component...', () => {
        });
   }
 
+  it('Can be created', () => {
+    let testBed = getTestBed();
+    mockBackendFunctions(testBed);
+
+    let fixture: ComponentFixture<BlogRollComponent> = getTestBed().createComponent(BlogRollComponent);
+    fixture.componentInstance.ngOnInit();
+    fixture.detectChanges();
+	
+    expect(fixture.nativeElement.querySelector('#blog-roll-panel') === null).toBe(false);
+  });
+
   it('contains list of blog items by default', () => {
       let testBed = getTestBed();
       mockBackendFunctions(testBed);
